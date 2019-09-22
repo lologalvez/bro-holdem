@@ -1,0 +1,94 @@
+.player
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    margin-left: 50px
+    position: fixed
+
+    &-position
+        &__0
+            top: 40%
+            right: 12%
+        &__1
+            top: 66%
+            right: 22%
+        &__2
+            top: 66%
+            right: 40%
+        &__3
+            top: 66%
+            right: 58%
+        &__4
+            top: 40% 
+            right: 77%
+        &__5
+            top: 28%
+            right: 74%
+        &__6
+            top: 28%
+            right: 15%
+ 
+    &-details
+        display: flex
+        flex-flow: row nowrap
+        width: 12rem
+        height: 4rem
+        color: white
+        background-color: rgba(0,0,0,0.6)
+        border: .08rem solid white
+
+        &--active
+            border: .08rem solid #F7FF00
+            box-shadow: 0 0 20px black
+
+    &-avatar
+        height: 4rem 
+        width: 4rem 
+        
+        &__img
+            border-top-left-radius: .4rem 
+            border-bottom-left-radius: .4rem 
+            height: 99%
+            width: 99%
+            object-fit: cover
+       
+    &-info
+        display: flex
+        flex-flow: column nowrap
+        justify-content: center
+        align-items: center
+        width: 6rem 
+        line-height: 1.3rem
+        font-size: .9rem
+        padding-bottom: .2rem
+
+        &__current-bet
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 12.2rem
+            background-color: black
+            padding-top: .2rem
+            padding-bottom: .2rem
+            font-size: .8rem
+
+            &--active
+                background: rgba(255, 50, 0, 1)
+
+
+        &__cards
+            display: flex
+            margin-bottom: -.2rem
+        
+        &__dealer
+            color: white
+        
+        &__sb
+            color: skyblue
+        
+        &__bb
+            color: yellow
+
+   
+

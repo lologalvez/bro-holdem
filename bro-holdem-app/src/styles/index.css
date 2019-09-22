@@ -1,0 +1,16 @@
+.player {
+  width: 3rem;
+  height: 3rem;
+}
+.player-avatar {
+  widht: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.player-avatar__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=index.css.map */

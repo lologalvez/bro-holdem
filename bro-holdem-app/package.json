@@ -1,0 +1,55 @@
+{
+  "name": "bro-holdem-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "^7.6.0",
+    "bcryptjs": "^2.4.3",
+    "bro-holdem-data": "file:../bro-holdem-data",
+    "bro-holdem-utils": "file:../bro-holdem-utils",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test-debug": "react-scripts --inspect-brk=3030 test --runInBand --no-cache",
+    "eject": "react-scripts eject",
+    "test:coverage": "react-scripts test --coverage --watchAll"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "src/common"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/components/**/*.js",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "jsonwebtoken": "^8.5.1"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "bro-holdem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha '**/*.spec.js'",
+    "test-debug": "npx mocha --inspect-brk '**/*.spec.js'",
+    "test-coverage": "nyc --reporter=html --reporter=text mocha logic/**/**/*.spec.js --runInBand"
+  },
+  "keywords": [],
+  "author": "Manuel Gálvez",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bro-holdem-data": "file:../bro-holdem-data",
+    "bro-holdem-utils": "file:../bro-holdem-utils",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.2",
+    "pokersolver": "^2.1.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  }
+}
