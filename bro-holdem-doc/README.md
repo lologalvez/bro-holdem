@@ -6,6 +6,8 @@ Bro Holdem is a platform that allows users to host and join real-time online pok
 
 It aims to provide a more convenient way to play poker without all the hustle of face-to-face games, such as: card dealing, turn time and chips arrangement.
 
+## [Demo (Desktop)]('https://bro-holdem.surge.sh/')
+
 ## Functional description
 [Wireframes](images/functional-description)
 
