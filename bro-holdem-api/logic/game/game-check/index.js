@@ -1,5 +1,13 @@
 const { models: { Game } } = require('bro-holdem-data')
 
+/**
+* Helper function with basic checks
+* @param {ObjectId} gameId 
+* @param {ObjectId} userId 
+* @return {undefined}
+*
+*/
+
 async function gameCheck(gameId, userId) {
 
     // Check if game exists

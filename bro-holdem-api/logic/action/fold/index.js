@@ -3,13 +3,11 @@ const { models: { Action } } = require('bro-holdem-data')
 const gameCheck = require('../../game/game-check')
 
 /**
-* 
-* @param {*} gameId 
-* @param {*} playerId 
-* @param {*} actionType 
-* @param {*} actionAmount 
-* 
-* @returns {Promise}
+* Fold cards and stop playing hand
+* @param {ObjectId} gameId 
+* @param {ObjectId} userId 
+* @return {undefined}
+*
 */
 
 module.exports = function (gameId, userId) {

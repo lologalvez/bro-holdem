@@ -2,11 +2,10 @@ const { validate } = require('bro-holdem-utils')
 const { models: { User } } = require('bro-holdem-data')
 
 /**
- * 
- * @param {*} id
- * @param {*} fieldsToUpdate 
- * 
-* @returns {Promise}
+* Update user object
+* @param {ObjectId} id
+* @param {object} fieldsToUpdate 
+* @returns {undefined}
 */
 
 module.exports = function (id, fieldsToUpdate) {

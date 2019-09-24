@@ -2,10 +2,10 @@ const { validate } = require('bro-holdem-utils')
 const { models: { Game, User } } = require('bro-holdem-data')
 
 /**
+* Retrieve game object 
+* @param {ObjectId} gameId
 * 
-* @param {*} gameId
-* 
-* @returns {Promise}
+* @returns {game object}
 */
 
 module.exports = function (gameId) {

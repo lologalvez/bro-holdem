@@ -3,9 +3,10 @@ const { models: { Game } } = require('bro-holdem-data')
 const { Hand } = require('pokersolver')
 
 /**
-* 
-* @param {*} gameId
-* @returns {Promise}
+* Resolve hand: determine winning hand and award winners with table pot
+* @param {ObjectId} gameId
+*
+* @returns {undefined}
 *
 */
 

@@ -3,15 +3,13 @@ const { models: { Action } } = require('bro-holdem-data')
 const gameCheck = require('../../game/game-check')
 
 /**
-* 
-* @param {*} gameId 
-* @param {*} playerId 
-* @param {*} actionType 
-* @param {*} actionAmount 
-* 
-* @returns {Promise}
+* Raise bet to amount passed to the function
+* @param {ObjectId} gameId 
+* @param {ObjectId} userId 
+* @param {number}   raiseTo 
+* @return {undefined}
+*
 */
-
 module.exports = function (gameId, userId, raiseTo) {
     /* Raising is betting over the highest bet on the table */
 

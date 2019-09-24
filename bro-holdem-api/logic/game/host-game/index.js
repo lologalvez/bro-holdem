@@ -2,16 +2,16 @@ const { validate } = require('bro-holdem-utils')
 const { models: { Game, Player } } = require('bro-holdem-data')
 
 /**
+* Create a new game object and generate game id for the rest of players to join
+* @param {string} name 
+* @param {number} maxPlayers 
+* @param {number} initialStack 
+* @param {number} initialBB 
+* @param {number} initialSB 
+* @param {number} blindsIncrease 
+* @param {ObjectId} hostId 
 * 
-* @param {*} name 
-* @param {*} maxPlayers 
-* @param {*} initialStack 
-* @param {*} initialBB 
-* @param {*} initialSB 
-* @param {*} blindsIncrease 
-* @param {*} hostId 
-* 
-* @returns {Promise}
+* @return {gameId}
 */
 
 module.exports = function (name, maxPlayers, initialStack, initialBB, initialSB, blindsIncrease, hostId) {

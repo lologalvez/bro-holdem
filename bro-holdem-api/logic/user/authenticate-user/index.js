@@ -3,11 +3,10 @@ const { models: { User } } = require('bro-holdem-data')
 const bcrypt = require('bcryptjs')
 
 /**
-* 
+* Authenticate user
 * @param {*} email 
 * @param {*} password 
-* 
-* @returns {Promise}
+* @return {user id}
 */
 
 module.exports = function (email, password) {

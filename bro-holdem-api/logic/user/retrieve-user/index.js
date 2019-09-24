@@ -3,10 +3,9 @@ const { models: { User } } = require('bro-holdem-data')
 /**
 
 /**
-* 
-* @param {*} id
-* 
-* @returns {Promise}
+* Retrieve user object sanitized
+* @param {ObjectId} id
+* @return {user object}
 */
 
 module.exports = function (id) {

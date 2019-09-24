@@ -1,14 +1,13 @@
 const { validate } = require('bro-holdem-utils')
 const { models: { Action } } = require('bro-holdem-data')
 const gameCheck = require('../../game/game-check')
+
 /**
-* 
-* @param {*} gameId 
-* @param {*} playerId 
-* @param {*} actionType 
-* @param {*} actionAmount 
-* 
-* @returns {Promise}
+* Pass turn when there is not a higher bet placed on the table
+* @param {ObjectId} gameId 
+* @param {ObjectId} userId 
+* @return {undefined}
+*
 */
 
 module.exports = function (gameId, userId) {

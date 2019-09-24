@@ -3,10 +3,9 @@ const { models: { Hand, Game } } = require('bro-holdem-data')
 const cardDealing = require('../../game/card-dealing')
 
 /**
-* 
-* @param {*} gameId
-* 
-* @returns {Promise}
+* Deal a new hand: reset table specs and deal both table and player cards 
+* @param {ObjectId} gameId
+* @return {game name}
 */
 
 module.exports = function (gameId) {

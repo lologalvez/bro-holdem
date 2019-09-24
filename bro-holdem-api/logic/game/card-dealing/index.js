@@ -1,5 +1,14 @@
 const { models: { Card } } = require('bro-holdem-data')
 
+/**
+* Helper function for random card dealing.
+* @param {array} destArray - Array to store random cards dealt
+* @param {number} numberOfCards - Number of random cards to be dealt
+* @param {array} usedCards - Array of cards to be check against to avoid repetition
+* @return {undefined}
+*
+*/
+
 async function cardDealing(destArray, numberOfCards, usedCards) {
 
     let randomCard, match

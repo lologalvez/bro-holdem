@@ -4,9 +4,9 @@ const cardDealing = require('../card-dealing')
 const resolveHand = require('../resolve-hand')
 
 /**
-* 
-* @param {*} gameId
-* @returns {Promise}
+* Check after each action if turn must be updated, round closed or hand resolved
+* @param {ObjectId} gameId
+* @returns {object}
 *
 */
 
